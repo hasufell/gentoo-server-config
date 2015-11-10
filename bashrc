@@ -3,7 +3,7 @@ CXX=clang++
 CFLAGS="-O2 -pipe -Wall"
 CXXFLAGS="${CFLAGS}"
 LDFLAGS="-Wl,-O1 -Wl,--as-needed -Wl,--hash-style=gnu"
-MAKEOPTS="-j4"
+MAKEOPTS="${MAKEOPTS:--j$(nproc 2>/dev/null || echo '1')}"
 
 # cmake
 CMAKE_MAKEFILE_GENERATOR="ninja"
