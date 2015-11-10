@@ -5,9 +5,6 @@ CXXFLAGS="${CFLAGS}"
 LDFLAGS="-Wl,-O1 -Wl,--as-needed -Wl,--hash-style=gnu"
 MAKEOPTS="${MAKEOPTS:--j$(nproc 2>/dev/null || echo '1')}"
 
-# cmake
-CMAKE_MAKEFILE_GENERATOR="ninja"
-
 # toolchain/gcc
 I_KNOW_WHAT_I_AM_DOING="yes"
 I_PROMISE_TO_SUPPLY_PATCHES_WITH_BUGS=1
