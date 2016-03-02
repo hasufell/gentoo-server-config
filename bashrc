@@ -1,5 +1,5 @@
-CC=clang
-CXX=clang++
+#CC=clang
+#CXX=clang++
 CFLAGS="-O2 -pipe -Wall"
 CXXFLAGS="${CFLAGS}"
 LDFLAGS="-Wl,-O1 -Wl,--as-needed -Wl,--hash-style=gnu"
